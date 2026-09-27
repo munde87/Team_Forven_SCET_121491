@@ -16,6 +16,7 @@ GEOVANI is an **evidence-first reporting intelligence platform** designed for CM
 ## 📋 Table of Contents
 
 - [Executive Summary](#executive-summary)
+- [Platform Screenshots & UI Showcase](#-platform-screenshots--ui-showcase)
 - [Research Background and Evidence](#research-background-and-evidence)
 - [System Architecture](#system-architecture)
 - [Key Innovation & Differentiators](#key-innovation--differentiators)
@@ -53,6 +54,38 @@ Query & Response | Topic Intelligence | Report Generation
         ↓
 Reviewer Verification + Approval
 ```
+
+---
+
+## 📸 Platform Screenshots & UI Showcase
+
+### 1. Sovereign Energy & Mining Intelligence Landing Page
+![GEOVANI Landing Page](docs/screenshots/01_landing_page.png)
+*High-impact hero portal featuring live telemetry node counts, indexed document stats, and national CIL mine archives.*
+
+---
+
+### 2. Role-Based Access & Subsidiary Auth Workbench
+![GEOVANI Authentication & RBAC](docs/screenshots/02_login_rbac.png)
+*Role-scoped authentication for CIL Administrators, ECL Analysts, MCL Analysts, and Statutory Audit Viewers.*
+
+---
+
+### 3. Retrieval Verification Audit Ledger (Anti-Hallucination RAG)
+![Retrieval Verification Audit Ledger](docs/screenshots/03_ai_query_verification.png)
+*Real-time RAG audit ledger demonstrating verified candidates alongside rejected candidates with explicit mismatch reasons.*
+
+---
+
+### 4. Evidence-Grounded AI Answer & Citation Traceability
+![Grounded Answer & Citations](docs/screenshots/04_ai_query_answer_citations.png)
+*100% Citation-verified answers with automated 5-year growth trajectory calculations and page-level source references.*
+
+---
+
+### 5. Document Intelligence & Statutory Library
+![Document Library](docs/screenshots/05_document_library.png)
+*Comprehensive statutory document library with confidence scores, subsidiary tags, and one-click report generation.*
 
 ---
 
