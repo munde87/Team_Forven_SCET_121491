@@ -1,0 +1,519 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 5403
+>>
+stream
+0.5670000000000001 w
+0 G
+0.06 0.09 0.16 rg
+0. 841.8899999999999864 595.2755905511811534 -107.7165354330708738 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+0.961 0.62 0.043 rg
+42.5196850393700814 796.5356692913385359 Td
+(GEOVANI DEMO — VENTILATION & SAFETY MONITORING REPORT) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+1. g
+42.5196850393700814 762.5199212598424765 Td
+(SYNTHETIC DEMONSTRATION DATA — Official Mine Record) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.118 0.227 0.541 rg
+42.5196850393700814 705.8270078740157487 Td
+(1. Document Metadata) Tj
+ET
+0.95 0.96 0.98 rg
+42.5196850393700814 694.4884251968503577 510.2362204724410049 -79.3700787401574814 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+56.6929133858267775 671.8112598425196893 Td
+(Mine: Demo Central Mine) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+56.6929133858267775 651.9687401574802834 Td
+(Subsidiary: Demo Coal Subsidiary) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+56.6929133858267775 632.1262204724408775 Td
+(Reporting Year: 2025) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+311.8110236220472871 671.8112598425196893 Td
+(Topic: Ventilation & Safety Monitoring) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+311.8110236220472871 651.9687401574802834 Td
+(Reference ID: GEOVANI-DEMO-002) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+311.8110236220472871 632.1262204724408775 Td
+(Status: Verified Statutory Data) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.118 0.227 0.541 rg
+42.5196850393700814 586.7718897637794271 Td
+(2. Monitoring Summary) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 564.0947244094487587 Td
+(This demonstration dataset contains four monthly ventilation observations. Key variables include average airflow,) Tj
+T* (maximum methane concentration and follow-up observations.) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.118 0.227 0.541 rg
+42.5196850393700814 507.4018110236219741 Td
+(3. Ventilation Observations Data Table) Tj
+ET
+0.89 0.91 0.94 rg
+42.5196850393700814 496.0632283464566399 510.2362204724410049 -28.3464566929133888 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+56.6929133858267775 476.2207086614172908 Td
+(Month) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+184.2519685039370358 476.2207086614172908 Td
+(Avg. Airflow \(m³/s\)) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+325.9842519685039974 476.2207086614172908 Td
+(Max Methane \(%\)) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+439.3700787401575099 476.2207086614172908 Td
+(Follow-up Observations) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+56.6929133858267775 450.7088976377952463 Td
+(April) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+212.5984251968504282 450.7088976377952463 Td
+(18.4) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+354.3307086614173613 450.7088976377952463 Td
+(0.42%) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+481.8897637795275841 450.7088976377952463 Td
+(5) Tj
+ET
+0.97 0.98 0.99 rg
+42.5196850393700814 439.3703149606298552 510.2362204724410049 -28.3464566929133888 re
+f
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+56.6929133858267775 422.3624409448818255 Td
+(May) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+212.5984251968504282 422.3624409448818255 Td
+(19.1) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+354.3307086614173613 422.3624409448818255 Td
+(0.38%) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+481.8897637795275841 422.3624409448818255 Td
+(4) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+56.6929133858267775 394.0159842519684616 Td
+(June) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+212.5984251968504282 394.0159842519684616 Td
+(18.7) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+354.3307086614173613 394.0159842519684616 Td
+(0.45% \(Peak\)) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+481.8897637795275841 394.0159842519684616 Td
+(6) Tj
+ET
+0.97 0.98 0.99 rg
+42.5196850393700814 382.6774015748030706 510.2362204724410049 -28.3464566929133888 re
+f
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+56.6929133858267775 365.6695275590550409 Td
+(July) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+212.5984251968504282 365.6695275590550409 Td
+(19.5) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+354.3307086614173613 365.6695275590550409 Td
+(0.36%) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+481.8897637795275841 365.6695275590550409 Td
+(3) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.118 0.227 0.541 rg
+42.5196850393700814 317.480551181102328 Td
+(4. Demonstration Findings & Audit Observations) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.2 0.255 0.333 rg
+56.6929133858267775 294.8033858267715459 Td
+(• Airflow increased from 18.4 m³/s in April to 19.5 m³/s in July.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.2 0.255 0.333 rg
+56.6929133858267775 272.1262204724408775 Td
+(• June recorded the highest maximum methane value at 0.45%.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.2 0.255 0.333 rg
+56.6929133858267775 249.4490551181102092 Td
+(• Follow-up observations decreased from 6 in June to 3 in July.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.2 0.255 0.333 rg
+56.6929133858267775 226.7718897637794271 Td
+(• These observations are synthetic and require expert validation before operational deployment.) Tj
+ET
+0.8 0.84 0.88 RG
+42.5196850393700814 175.748267716535338 m
+552.7559055118110791 175.748267716535338 l
+S
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.392 0.455 0.545 rg
+42.5196850393700814 153.0711023622046696 Td
+(Reference: GEOVANI-DEMO-002 | Year: 2025 | Topic: Ventilation & Safety | Status: Verified Synthetic Data) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R ]
+/Count 1
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+/F4 8 0 R
+/F5 9 0 R
+/F6 10 0 R
+/F7 11 0 R
+/F8 12 0 R
+/F9 13 0 R
+/F10 14 0 R
+/F11 15 0 R
+/F12 16 0 R
+/F13 17 0 R
+/F14 18 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+19 0 obj
+<<
+/Producer (jsPDF 4.2.1)
+/CreationDate (D:20260927081729+05'30')
+>>
+endobj
+20 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000005607 00000 n 
+0000007424 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000005664 00000 n 
+0000005789 00000 n 
+0000005919 00000 n 
+0000006052 00000 n 
+0000006189 00000 n 
+0000006312 00000 n 
+0000006441 00000 n 
+0000006573 00000 n 
+0000006709 00000 n 
+0000006837 00000 n 
+0000006964 00000 n 
+0000007093 00000 n 
+0000007226 00000 n 
+0000007328 00000 n 
+0000007672 00000 n 
+0000007758 00000 n 
+trailer
+<<
+/Size 21
+/Root 20 0 R
+/Info 19 0 R
+/ID [ <4E814EC7E17B0597F4919FE7174649D4> <4E814EC7E17B0597F4919FE7174649D4> ]
+>>
+startxref
+7862
+%%EOF
