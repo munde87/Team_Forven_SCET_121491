@@ -269,6 +269,189 @@ Approval-Ready CMPDI/CIL Reporting Intelligence
 
 ---
 
+## 🗺️ Detailed System Architecture & Knowledge Pipeline
+
+```text
+                                  ┌─────────────────────────────┐
+                                  │          GEOVANI            │
+                                  │ Mining Knowledge & Reporting│
+                                  │        Intelligence         │
+                                  └──────────────┬──────────────┘
+                                                 │
+                                                 ↓
+                                  ┌─────────────────────────────┐
+                                  │        DATA SOURCES         │
+                                  └──────────────┬──────────────┘
+                                                 │
+                    ┌────────────────────────────┼────────────────────────────┐
+                    ↓                            ↓                            ↓
+              USER UPLOAD                     SAP                    EXISTING DATA
+                    │                     Coal Mine Data                    │
+                    │                            │                          │
+        ┌───────────┼────────────┐              │                          │
+        ↓           ↓            ↓              ↓                          ↓
+      PDF/SCAN    EXCEL/CSV    WORD       SAP RECORDS                DATABASE
+      IMAGE/MAP   REPORTS      DOCS
+        │           │            │              │
+        └───────────┴────────────┴──────────────┴──────────────────────────┘
+                                      │
+                                      ↓
+                         ┌────────────────────────┐
+                         │ FILE / DATA DETECTION  │
+                         │ PDF • Scan • Excel     │
+                         │ Word • Image • SAP     │
+                         └────────────┬───────────┘
+                                      │
+                                      ↓
+                    ┌────────────────────────────────┐
+                    │     DOCUMENT INTELLIGENCE      │
+                    └────────────────┬───────────────┘
+                                     │
+                ┌────────────────────┼────────────────────┐
+                ↓                    ↓                    ↓
+             TEXT                 TABLES             FIGURES / MAPS
+                │                    │                    │
+             OCR*              Table Extraction     Image Extraction
+          Layout Parsing       Row/Column Data       Caption Detection
+          Page Mapping         Table Metadata        Map Metadata
+                │                    │                    │
+                └────────────────────┼────────────────────┘
+                                     │
+                                     ↓
+                         ┌────────────────────────┐
+                         │    DOMAIN ENRICHMENT   │
+                         ├────────────────────────┤
+                         │ Mine • Subsidiary      │
+                         │ Location • Year        │
+                         │ Production • Equipment │
+                         │ Seam • Geology         │
+                         │ Topic • Keywords       │
+                         └────────────┬───────────┘
+                                      │
+                                      ↓
+                         ┌────────────────────────┐
+                         │   SEMANTIC CHUNKING     │
+                         └────────────┬───────────┘
+                                      │
+                 ┌────────────────────┼────────────────────┐
+                 ↓                    ↓                    ↓
+             TEXT CHUNKS         TABLE CHUNKS        IMAGE / MAP
+                                                        REPRESENTATION
+                 └────────────────────┼────────────────────┘
+                                      │
+                                      ↓
+                         ┌────────────────────────┐
+                         │ MULTIMODAL EMBEDDINGS  │
+                         └────────────┬───────────┘
+                                      │
+                                      ↓
+                         ┌────────────────────────┐
+                         │      KNOWLEDGE STORE   │
+                         └────────────┬───────────┘
+                                      │
+              ┌───────────────────────┼────────────────────────┐
+              ↓                       ↓                        ↓
+        ┌────────────┐          ┌────────────┐          ┌──────────────┐
+        │ PostgreSQL │          │  pgvector  │          │Object Storage│
+        ├────────────┤          ├────────────┤          ├──────────────┤
+        │Structured  │          │Embeddings  │          │Original PDF  │
+        │SAP Data    │          │Text Vectors│          │Excel / Word  │
+        │Tables      │          │Image/Map   │          │Images / Maps │
+        │Metadata    │          │Vectors     │          │Source Files  │
+        │Topics      │          │Chunks      │          │              │
+        └──────┬─────┘          └──────┬─────┘          └──────┬───────┘
+               │                       │                       │
+               └───────────────────────┼───────────────────────┘
+                                       ↓
+                            ┌──────────────────────┐
+                            │  GEOVANI RETRIEVAL   │
+                            │       ENGINE         │
+                            └──────────┬───────────┘
+                                       │
+                                       ↓
+                               ┌───────────────┐
+                               │   USER / TASK │
+                               └───────┬───────┘
+                                       │
+                                       ↓
+                             ┌───────────────────┐
+                             │ QUERY UNDERSTAND. │
+                             └─────────┬─────────┘
+                                       │
+                 ┌─────────────────────┼─────────────────────┐
+                 ↓                     ↓                     ↓
+       ┌──────────────────┐  ┌──────────────────┐  ┌─────────────────────┐
+       │  MODULE 1        │  │   MODULE 2       │  │     MODULE 3        │
+       │ AI QUERY &       │  │ AUTOMATED        │  │ TOPIC & KNOWLEDGE   │
+       │ RESPONSE         │  │ REPORT GENERATION│  │ EXPLORER             │
+       └────────┬─────────┘  └────────┬─────────┘  └──────────┬──────────┘
+                │                     │                       │
+                ↓                     ↓                       ↓
+       Structured Query       Report Parameters         Keyword / Topic
+       + Document Query       + Filters                 + Filters
+                │                     │                       │
+                ↓                     ↓                       ↓
+       PostgreSQL +            PostgreSQL +            PostgreSQL +
+       pgvector                pgvector                pgvector
+                │                     │                       │
+                ↓                     ↓                       ↓
+       Exact Data +            Structured Data +        Frequency / TF-IDF
+       Relevant Chunks         Relevant Chunks          Topics / Relations
+                │                     │                       │
+                └─────────────────────┼───────────────────────┘
+                                      │
+                                      ↓
+                             ┌─────────────────┐
+                             │ RELEVANT        │
+                             │ EVIDENCE SET    │
+                             └────────┬────────┘
+                                      │
+                                      ↓
+                             ┌─────────────────┐
+                             │      vLLM       │
+                             │ PRIVATE LLM     │
+                             │ INFERENCE SERVER│
+                             └────────┬────────┘
+                                      │
+                    ┌─────────────────┼─────────────────────┐
+                    ↓                 ↓                     ↓
+             ┌─────────────┐   ┌──────────────┐    ┌────────────────┐
+             │   ANSWER    │   │    REPORT    │    │    INSIGHTS    │
+             │             │   │              │    │                │
+             │ Query       │   │ DOCX / PDF   │    │ Topics         │
+             │ Response    │   │ Charts       │    │ Trends         │
+             │ Citation    │   │ Tables       │    │                │
+             └──────┬──────┘   └───────┬──────┘    └───────┬────────┘
+                    │                  │                    │
+                    └──────────────────┼────────────────────┘
+                                       ↓
+                         ┌─────────────────────────┐
+                         │ SOURCE TRACEABILITY     │
+                         ├─────────────────────────┤
+                         │ Document • Page • Year  │
+                         │ Section • Source        │
+                         └────────────┬────────────┘
+                                      │
+                                      ↓
+                         ┌─────────────────────────┐
+                         │      REACT DASHBOARD    │
+                         ├─────────────────────────┤
+                         │                         │
+                         │  QUERY & RESPONSE       │
+                         │  REPORT GENERATION      │
+                         │  TOPIC / KNOWLEDGE      │
+                         │  GRAPHS • TABLES        │
+                         │  WORD CLOUD             │
+                         │  SOURCE DOCUMENTS       │
+                         │                         │
+                         └────────────┬────────────┘
+                                      │
+                                      ↓
+                              USER GETS RESULT
+```
+
+---
+
 ## 🏗️ Core Platform Capabilities
 
 1. **Multi-Role Workspace & RBAC**

@@ -18,31 +18,182 @@ The frontend demo may use mock services, while the architecture remains compatib
 ## 2. System Architecture
 
 ```text
-Users / Officers
-      │
-      ▼
-API Gateway / Web Shell (React 18 + Vite)
-      │
-      ▼
-Ingestion & Processing Queue ──► Document OCR & Layout Engine
-      │
-      ▼
-PostgreSQL / pgvector + Object Storage (Original Files, Chunks, Embeddings)
-      │
-      ▼
-Hybrid Retrieval Engine (Keyword + Vector Similarity)
-      │
-      ▼
-Cross-Encoder Reranking
-      │
-      ▼
-Retrieval Verification Layer (Provenance & Conflict Check)
-      │
-      ▼
-Private LLM Inference (vLLM / Grounded Prompting)
-      │
-      ▼
-Evidence-Linked Outputs (Query, DOCX/PDF Reports, Topic Intelligence)
+                                  ┌─────────────────────────────┐
+                                  │          GEOVANI            │
+                                  │ Mining Knowledge & Reporting│
+                                  │        Intelligence         │
+                                  └──────────────┬──────────────┘
+                                                 │
+                                                 ↓
+                                  ┌─────────────────────────────┐
+                                  │        DATA SOURCES         │
+                                  └──────────────┬──────────────┘
+                                                 │
+                    ┌────────────────────────────┼────────────────────────────┐
+                    ↓                            ↓                            ↓
+              USER UPLOAD                     SAP                    EXISTING DATA
+                    │                     Coal Mine Data                    │
+                    │                            │                          │
+        ┌───────────┼────────────┐              │                          │
+        ↓           ↓            ↓              ↓                          ↓
+      PDF/SCAN    EXCEL/CSV    WORD       SAP RECORDS                DATABASE
+      IMAGE/MAP   REPORTS      DOCS
+        │           │            │              │
+        └───────────┴────────────┴──────────────┴──────────────────────────┘
+                                      │
+                                      ↓
+                         ┌────────────────────────┐
+                         │ FILE / DATA DETECTION  │
+                         │ PDF • Scan • Excel     │
+                         │ Word • Image • SAP     │
+                         └────────────┬───────────┘
+                                      │
+                                      ↓
+                    ┌────────────────────────────────┐
+                    │     DOCUMENT INTELLIGENCE      │
+                    └────────────────┬───────────────┘
+                                     │
+                ┌────────────────────┼────────────────────┐
+                ↓                    ↓                    ↓
+             TEXT                 TABLES             FIGURES / MAPS
+                │                    │                    │
+             OCR*              Table Extraction     Image Extraction
+          Layout Parsing       Row/Column Data       Caption Detection
+          Page Mapping         Table Metadata        Map Metadata
+                │                    │                    │
+                └────────────────────┼────────────────────┘
+                                     │
+                                     ↓
+                         ┌────────────────────────┐
+                         │    DOMAIN ENRICHMENT   │
+                         ├────────────────────────┤
+                         │ Mine • Subsidiary      │
+                         │ Location • Year        │
+                         │ Production • Equipment │
+                         │ Seam • Geology         │
+                         │ Topic • Keywords       │
+                         └────────────┬───────────┘
+                                      │
+                                      ↓
+                         ┌────────────────────────┐
+                         │   SEMANTIC CHUNKING     │
+                         └────────────┬───────────┘
+                                      │
+                 ┌────────────────────┼────────────────────┐
+                 ↓                    ↓                    ↓
+             TEXT CHUNKS         TABLE CHUNKS        IMAGE / MAP
+                                                        REPRESENTATION
+                 └────────────────────┼────────────────────┘
+                                      │
+                                      ↓
+                         ┌────────────────────────┐
+                         │ MULTIMODAL EMBEDDINGS  │
+                         └────────────┬───────────┘
+                                      │
+                                      ↓
+                         ┌────────────────────────┐
+                         │      KNOWLEDGE STORE   │
+                         └────────────┬───────────┘
+                                      │
+              ┌───────────────────────┼────────────────────────┐
+              ↓                       ↓                        ↓
+        ┌────────────┐          ┌────────────┐          ┌──────────────┐
+        │ PostgreSQL │          │  pgvector  │          │Object Storage│
+        ├────────────┤          ├────────────┤          ├──────────────┤
+        │Structured  │          │Embeddings  │          │Original PDF  │
+        │SAP Data    │          │Text Vectors│          │Excel / Word  │
+        │Tables      │          │Image/Map   │          │Images / Maps │
+        │Metadata    │          │Vectors     │          │Source Files  │
+        │Topics      │          │Chunks      │          │              │
+        └──────┬─────┘          └──────┬─────┘          └──────┬───────┘
+               │                       │                       │
+               └───────────────────────┼───────────────────────┘
+                                       ↓
+                            ┌──────────────────────┐
+                            │  GEOVANI RETRIEVAL   │
+                            │       ENGINE         │
+                            └──────────┬───────────┘
+                                       │
+                                       ↓
+                               ┌───────────────┐
+                               │   USER / TASK │
+                               └───────┬───────┘
+                                       │
+                                       ↓
+                             ┌───────────────────┐
+                             │ QUERY UNDERSTAND. │
+                             └─────────┬─────────┘
+                                       │
+                 ┌─────────────────────┼─────────────────────┐
+                 ↓                     ↓                     ↓
+       ┌──────────────────┐  ┌──────────────────┐  ┌─────────────────────┐
+       │  MODULE 1        │  │   MODULE 2       │  │     MODULE 3        │
+       │ AI QUERY &       │  │ AUTOMATED        │  │ TOPIC & KNOWLEDGE   │
+       │ RESPONSE         │  │ REPORT GENERATION│  │ EXPLORER             │
+       └────────┬─────────┘  └────────┬─────────┘  └──────────┬──────────┘
+                │                     │                       │
+                ↓                     ↓                       ↓
+       Structured Query       Report Parameters         Keyword / Topic
+       + Document Query       + Filters                 + Filters
+                │                     │                       │
+                ↓                     ↓                       ↓
+       PostgreSQL +            PostgreSQL +            PostgreSQL +
+       pgvector                pgvector                pgvector
+                │                     │                       │
+                ↓                     ↓                       ↓
+       Exact Data +            Structured Data +        Frequency / TF-IDF
+       Relevant Chunks         Relevant Chunks          Topics / Relations
+                │                     │                       │
+                └─────────────────────┼───────────────────────┘
+                                      │
+                                      ↓
+                             ┌─────────────────┐
+                             │ RELEVANT        │
+                             │ EVIDENCE SET    │
+                             └────────┬────────┘
+                                      │
+                                      ↓
+                             ┌─────────────────┐
+                             │      vLLM       │
+                             │ PRIVATE LLM     │
+                             │ INFERENCE SERVER│
+                             └────────┬────────┘
+                                      │
+                    ┌─────────────────┼─────────────────────┐
+                    ↓                 ↓                     ↓
+             ┌─────────────┐   ┌──────────────┐    ┌────────────────┐
+             │   ANSWER    │   │    REPORT    │    │    INSIGHTS    │
+             │             │   │              │    │                │
+             │ Query       │   │ DOCX / PDF   │    │ Topics         │
+             │ Response    │   │ Charts       │    │ Trends         │
+             │ Citation    │   │ Tables       │    │                │
+             └──────┬──────┘   └───────┬──────┘    └───────┬────────┘
+                    │                  │                    │
+                    └──────────────────┼────────────────────┘
+                                       ↓
+                         ┌─────────────────────────┐
+                         │ SOURCE TRACEABILITY     │
+                         ├─────────────────────────┤
+                         │ Document • Page • Year  │
+                         │ Section • Source        │
+                         └────────────┬────────────┘
+                                      │
+                                      ↓
+                         ┌─────────────────────────┐
+                         │      REACT DASHBOARD    │
+                         ├─────────────────────────┤
+                         │                         │
+                         │  QUERY & RESPONSE       │
+                         │  REPORT GENERATION      │
+                         │  TOPIC / KNOWLEDGE      │
+                         │  GRAPHS • TABLES        │
+                         │  WORD CLOUD             │
+                         │  SOURCE DOCUMENTS       │
+                         │                         │
+                         └────────────┬────────────┘
+                                      │
+                                      ↓
+                              USER GETS RESULT
 ```
 
 - **Original files:** Object Storage (S3 / MinIO).
