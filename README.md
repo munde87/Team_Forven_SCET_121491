@@ -89,6 +89,36 @@ Reviewer Verification + Approval
 
 ---
 
+### 6. Object Storage Vault (S3 Raw File Storage & Checksums)
+![Object Storage Vault](docs/screenshots/06_object_storage_vault.png)
+*Enterprise S3 raw object store displaying immutable SHA-256 integrity hashes, document URIs, and download/inspect controls.*
+
+---
+
+### 7. Automated Statutory Reports Exporter Studio
+![Statutory Reports Studio](docs/screenshots/07_statutory_reports_studio.png)
+*Pre-formatted statutory report studio rendering executive summaries, key findings, and page-cited sources for official release.*
+
+---
+
+### 8. Mining Intelligence & Subsidiary Scope Explorer
+![Mining Intelligence Scope](docs/screenshots/08_mining_intelligence_scope.png)
+*Faceted organization scope (CIL, ECL, BCCL, CCL, NCL, SECL, WCL, MCL, CMPDI, NEC) and interactive mining keyword cloud.*
+
+---
+
+### 9. Geotechnical Telemetry & Slope Stability Benchmark Metrics
+![Slope Stability Benchmark Metrics](docs/screenshots/09_telemetry_slope_stability.png)
+*Real-time geotechnical metrics (Factor of Safety 1.42, Radar Displacement Rate 0.4mm/day, Bench Slope Angle 45°) and bounding-box page preview.*
+
+---
+
+### 10. Multi-Batch Ingestion Workbench & Drag-and-Drop Ingester
+![Multi-File Ingestion Workbench](docs/screenshots/10_multi_file_ingestion_workbench.png)
+*Drag-and-drop multi-file ingester supporting PDF, DOCX, XLSX, CSV, PNG, JPG, and CAD DWG mining records.*
+
+---
+
 ## 🔬 Research Background and Evidence
 
 GEOVANI is grounded in academic research and official sector frameworks demonstrating the feasibility of document intelligence, NLP, and RAG in mining and government reporting.
