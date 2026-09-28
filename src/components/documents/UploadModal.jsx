@@ -201,8 +201,8 @@ export const UploadModal = () => {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <a
-                    href="/sample-pdfs/GEOVANI_Demo_Mining_Report.docx"
-                    download="GEOVANI_Demo_Mining_Report.docx"
+                    href="/sample-pdfs/Sankalan_AI_Demo_Mining_Report.docx"
+                    download="Sankalan_AI_Demo_Mining_Report.docx"
                     onClick={(e) => e.stopPropagation()}
                     className="px-2.5 py-1 rounded-lg bg-surface-container-lowest border border-amber-500/30 text-secondary hover:text-primary text-[11px] font-semibold flex items-center gap-1 shadow-2xs"
                   >
@@ -211,8 +211,8 @@ export const UploadModal = () => {
                   </a>
 
                   <a
-                    href="/sample-pdfs/GEOVANI_Demo_Ventilation_Safety_Report.pdf"
-                    download="GEOVANI_Demo_Ventilation_Safety_Report.pdf"
+                    href="/sample-pdfs/Sankalan_AI_Demo_Ventilation_Safety_Report.pdf"
+                    download="Sankalan_AI_Demo_Ventilation_Safety_Report.pdf"
                     onClick={(e) => e.stopPropagation()}
                     className="px-2.5 py-1 rounded-lg bg-surface-container-lowest border border-amber-500/30 text-secondary hover:text-primary text-[11px] font-semibold flex items-center gap-1 shadow-2xs"
                   >

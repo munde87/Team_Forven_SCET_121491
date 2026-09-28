@@ -28,7 +28,7 @@ export const RoleSelectionModal = () => {
               <span className="material-symbols-outlined text-[16px]">shield_person</span>
               DEMO ACCESS MODE • PROTOTYPE SIMULATION
             </div>
-            <h2 className="text-2xl font-black text-on-surface tracking-tight">Welcome to GEOVANI</h2>
+            <h2 className="text-2xl font-black text-on-surface tracking-tight">Welcome to Sankalan AI</h2>
             <p className="text-secondary text-sm font-medium mt-1">
               Select your organization and access scope to continue into the demo platform.
             </p>

@@ -17,19 +17,19 @@ export const AppProvider = ({ children }) => {
 
   // Documents state (persisted)
   const [documents, setDocuments] = useState(() => {
-    const saved = localStorage.getItem("geovani_documents");
+    const saved = localStorage.getItem("sankalan_documents") || localStorage.getItem("geovani_documents");
     return saved ? JSON.parse(saved) : INITIAL_DOCUMENTS;
   });
 
   // Reports state (persisted)
   const [reports, setReports] = useState(() => {
-    const saved = localStorage.getItem("geovani_reports");
+    const saved = localStorage.getItem("sankalan_reports") || localStorage.getItem("geovani_reports");
     return saved ? JSON.parse(saved) : INITIAL_REPORTS;
   });
 
   // Query History state
   const [recentQueries, setRecentQueries] = useState(() => {
-    const saved = localStorage.getItem("geovani_queries");
+    const saved = localStorage.getItem("sankalan_queries") || localStorage.getItem("geovani_queries");
     return saved ? JSON.parse(saved) : [
       "What safety issues were identified in the selected mine reports?",
       "What production trends were reported during FY 2024–25?",
@@ -50,15 +50,15 @@ export const AppProvider = ({ children }) => {
 
   // Sync to localStorage
   useEffect(() => {
-    localStorage.setItem("geovani_documents", JSON.stringify(documents));
+    localStorage.setItem("sankalan_documents", JSON.stringify(documents));
   }, [documents]);
 
   useEffect(() => {
-    localStorage.setItem("geovani_reports", JSON.stringify(reports));
+    localStorage.setItem("sankalan_reports", JSON.stringify(reports));
   }, [reports]);
 
   useEffect(() => {
-    localStorage.setItem("geovani_queries", JSON.stringify(recentQueries));
+    localStorage.setItem("sankalan_queries", JSON.stringify(recentQueries));
   }, [recentQueries]);
 
   const showToast = (message, type = "info") => {

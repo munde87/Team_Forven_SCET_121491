@@ -5,7 +5,7 @@ import { Document, Packer, Paragraph, TextRun, HeadingLevel, Table, TableRow, Ta
 /**
  * Downloads a DOM element as a formatted PDF using html2canvas & jsPDF.
  */
-export const downloadReportAsPDF = async (reportElementId, reportTitle = "GEOVANI_Report") => {
+export const downloadReportAsPDF = async (reportElementId, reportTitle = "Sankalan_AI_Report") => {
   try {
     const element = document.getElementById(reportElementId);
     if (!element) {
@@ -53,7 +53,7 @@ export const downloadReportAsPDF = async (reportElementId, reportTitle = "GEOVAN
 /**
  * Generates and downloads a structured DOCX file from report object data.
  */
-export const downloadReportAsDOCX = async (reportData, reportTitle = "GEOVANI_Report") => {
+export const downloadReportAsDOCX = async (reportData, reportTitle = "Sankalan_AI_Report") => {
   try {
     const doc = new Document({
       sections: [
@@ -61,7 +61,7 @@ export const downloadReportAsDOCX = async (reportData, reportTitle = "GEOVANI_Re
           properties: {},
           children: [
             new Paragraph({
-              text: "GEOVANI — MINING INTELLIGENCE PLATFORM",
+              text: "SANKALAN AI — MINING INTELLIGENCE PLATFORM",
               heading: HeadingLevel.HEADING_1,
               spacing: { after: 120 }
             }),

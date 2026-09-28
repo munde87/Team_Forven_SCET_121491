@@ -119,16 +119,16 @@ export const DocumentsPage = () => {
 
           <div className="flex flex-wrap gap-2 shrink-0">
             <a
-              href="/sample-pdfs/GEOVANI_Demo_Mining_Report.docx"
-              download="GEOVANI_Demo_Mining_Report.docx"
+              href="/sample-pdfs/Sankalan_AI_Demo_Mining_Report.docx"
+              download="Sankalan_AI_Demo_Mining_Report.docx"
               className="px-3 py-1.5 rounded-xl bg-surface-container-lowest border border-amber-500/30 text-on-surface hover:text-primary text-xs font-bold flex items-center gap-1.5 shadow-2xs transition-colors"
             >
               <span className="material-symbols-outlined text-[16px] text-blue-600">description</span>
               <span>Download Mining DOCX</span>
             </a>
             <a
-              href="/sample-pdfs/GEOVANI_Demo_Ventilation_Safety_Report.pdf"
-              download="GEOVANI_Demo_Ventilation_Safety_Report.pdf"
+              href="/sample-pdfs/Sankalan_AI_Demo_Ventilation_Safety_Report.pdf"
+              download="Sankalan_AI_Demo_Ventilation_Safety_Report.pdf"
               className="px-3 py-1.5 rounded-xl bg-surface-container-lowest border border-amber-500/30 text-on-surface hover:text-primary text-xs font-bold flex items-center gap-1.5 shadow-2xs transition-colors"
             >
               <span className="material-symbols-outlined text-[16px] text-amber-600">picture_as_pdf</span>

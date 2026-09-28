@@ -112,7 +112,7 @@ export const generateReportFromConfig = (config, onProgress) => {
           period: config.period || "FY 2024–25",
           createdAt: new Date().toISOString().split("T")[0],
           status: "Approved",
-          author: doc ? `Uploaded Source Engine (${doc.filename})` : "GEOVANI Sovereign Engine",
+          author: doc ? `Uploaded Source Engine (${doc.filename})` : "Sankalan AI Sovereign Engine",
           sourcesCount: doc ? 1 : Math.floor(Math.random() * 5) + 3,
           evidenceCount: doc ? (doc.extractedTables || 8) : Math.floor(Math.random() * 12) + 8,
           sourceDocFilename: doc?.filename || null,

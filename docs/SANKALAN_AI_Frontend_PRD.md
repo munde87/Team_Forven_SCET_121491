@@ -1,12 +1,12 @@
-# GEOVANI — Demo Frontend PRD
+# SANKALAN AI — Demo Frontend PRD
 
-*Complete UI/UX Specification for the GEOVANI React Shell.*
+*Complete UI/UX Specification for the SANKALAN AI React Shell.*
 
 ---
 
 ## 1. Overview & Goals
 
-The GEOVANI frontend is a desktop-first, industrial enterprise application designed for mining executives, geological officers, and reviewers. It demonstrates the complete flow from file ingestion to RAG retrieval verification, evidence drawer inspection, and DOCX/PDF export.
+The SANKALAN AI frontend is a desktop-first, industrial enterprise application designed for mining executives, geological officers, and reviewers. It demonstrates the complete flow from file ingestion to RAG retrieval verification, evidence drawer inspection, and DOCX/PDF export.
 
 ---
 

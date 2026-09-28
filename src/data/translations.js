@@ -15,7 +15,7 @@ export const TRANSLATIONS = {
     heroBadge: "AI-Powered Sovereign Mining Intelligence",
     heroTitlePrefix: "Turn Mining Data Into ",
     heroTitleHighlight: "Decision-Ready Intelligence.",
-    heroDesc: "GEOVANI unifies statutory reports, geological boreholes, telemetry records, and lease documentation into one sovereign, evidence-first intelligence infrastructure.",
+    heroDesc: "Sankalan AI unifies statutory reports, geological boreholes, telemetry records, and lease documentation into one sovereign, evidence-first intelligence infrastructure.",
     exploreBtn: "Explore Intelligence",
     viewDemoBtn: "View Interactive Demo",
     evidenceFirst: "Evidence-first",
@@ -62,12 +62,12 @@ export const TRANSLATIONS = {
     challengeDesc: "Decades of exploratory drillings, daily pit telemetry, and environmental statutory filings remain trapped in fragmented formats across decentralized state subsidiaries.",
     
     workflowTag: "System Pipeline",
-    workflowTitle: "How GEOVANI Turns Raw Mining Data Into Intelligence",
+    workflowTitle: "How Sankalan AI Turns Raw Mining Data Into Intelligence",
     workflowDesc: "A rigorous five-stage deterministic verification pipeline built specifically for heavy industry and natural resource governance.",
 
     queryPreviewTag: "Interactive Prototype",
     queryPreviewTitle: "Deterministic AI Query & Evidence Validation",
-    queryPreviewDesc: "Experience how GEOVANI answers complex technical queries with fully inspectable citations."
+    queryPreviewDesc: "Experience how Sankalan AI answers complex technical queries with fully inspectable citations."
   },
 
   hi: {
@@ -86,7 +86,7 @@ export const TRANSLATIONS = {
     heroBadge: "एआई-संचालित संप्रभु खनन बुद्धिमत्ता",
     heroTitlePrefix: "खनन डेटा को ",
     heroTitleHighlight: "निर्णय-तैयार बुद्धिमत्ता में बदलें।",
-    heroDesc: "जियोवानी (GEOVANI) वैधानिक रिपोर्ट, भूगर्भीय बोरहोल, टेलीमेट्री रिकॉर्ड और पट्टा दस्तावेजों को एक एकीकृत, साक्ष्य-प्रथम संप्रभु बुद्धिमत्ता मंच में संयोजित करता है।",
+    heroDesc: "संकलन AI (Sankalan AI) वैधानिक रिपोर्ट, भूगर्भीय बोरहोल, टेलीमेट्री रिकॉर्ड और पट्टा दस्तावेजों को एक एकीकृत, साक्ष्य-प्रथम संप्रभु बुद्धिमत्ता मंच में संयोजित करता है।",
     exploreBtn: "बुद्धिमत्ता का अन्वेषण करें",
     viewDemoBtn: "इंटरएक्टिव डेमो देखें",
     evidenceFirst: "साक्ष्य-प्रथम",
@@ -133,11 +133,11 @@ export const TRANSLATIONS = {
     challengeDesc: "दशकों के खोजपूर्ण ड्रिलिंग, दैनिक गड्ढे टेलीमेट्री, और पर्यावरण वैधानिक फाइलिंग विकेंद्रीकृत राज्य सहायकों में विखंडित प्रारूपों में फंसे हुए हैं।",
     
     workflowTag: "सिस्टम पाइपलाइन",
-    workflowTitle: "जियोवानी (GEOVANI) कच्चे खनन डेटा को बुद्धिमत्ता में कैसे बदलता है",
+    workflowTitle: "संकलन AI (Sankalan AI) कच्चे खनन डेटा को बुद्धिमत्ता में कैसे बदलता है",
     workflowDesc: "विशेष रूप से भारी उद्योग और प्राकृतिक संसाधन प्रशासन के लिए निर्मित एक कठोर पांच-स्तरीय सत्यनिष्ठा सत्यापन पाइपलाइन।",
 
     queryPreviewTag: "इंटरएक्टिव प्रारूप",
     queryPreviewTitle: "सटीक एआई प्रश्न और साक्ष्य सत्यापन",
-    queryPreviewDesc: "अनुभव करें कि कैसे जियोवानी पूरी तरह से निरीक्षण योग्य उद्धरणों के साथ जटिल तकनीकी प्रश्नों के उत्तर देता है।"
+    queryPreviewDesc: "अनुभव करें कि कैसे संकलन AI (Sankalan AI) पूरी तरह से निरीक्षण योग्य उद्धरणों के साथ जटिल तकनीकी प्रश्नों के उत्तर देता है।"
   }
 };

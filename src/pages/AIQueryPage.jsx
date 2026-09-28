@@ -141,7 +141,7 @@ export const AIQueryPage = () => {
                     <p className="text-[11px] text-secondary line-clamp-2">{sq.description}</p>
                   </div>
                   <div className="mt-3 flex items-center justify-end text-primary font-bold text-[11px] gap-1">
-                    <span>Ask GEOVANI</span>
+                    <span>Ask Sankalan AI</span>
                     <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
                   </div>
                 </button>
@@ -169,7 +169,7 @@ export const AIQueryPage = () => {
               disabled={isLoading}
               className="absolute right-3 top-3 h-10 px-5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-2 shadow-md hover:bg-primary-container disabled:opacity-50 transition-all active:scale-95"
             >
-              <span>{isLoading ? "Processing..." : "ASK GEOVANI"}</span>
+              <span>{isLoading ? "Processing..." : "ASK SANKALAN AI"}</span>
               <span className="material-symbols-outlined text-[18px]">send</span>
             </button>
           </div>
@@ -264,7 +264,7 @@ export const AIQueryPage = () => {
               <span>Demo evidence is not available for this question.</span>
             </div>
             <p className="text-sm">
-              The GEOVANI SIH prototype operates on a controlled set of verified demo documents and questions to guarantee deterministic evidence citation.
+              The Sankalan AI SIH prototype operates on a controlled set of verified demo documents and questions to guarantee deterministic evidence citation.
             </p>
             <div className="pt-2">
               <span className="font-bold text-xs block mb-2">Try one of the supported questions:</span>
@@ -368,7 +368,7 @@ export const AIQueryPage = () => {
               </div>
             </div>
 
-            {/* GEOVANI ANSWER & KEY FINDINGS */}
+            {/* SANKALAN AI ANSWER & KEY FINDINGS */}
             <div className="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-highest shadow-sm space-y-5">
               <div className="flex items-center justify-between border-b border-surface-container-high pb-3">
                 <div className="flex items-center gap-2">
@@ -376,7 +376,7 @@ export const AIQueryPage = () => {
                     <span className="material-symbols-outlined text-[20px]">smart_toy</span>
                   </span>
                   <div>
-                    <h2 className="font-bold text-base text-on-surface">GEOVANI ANSWER</h2>
+                    <h2 className="font-bold text-base text-on-surface">SANKALAN AI ANSWER</h2>
                     <span className="text-xs text-secondary font-mono">Grounded strictly in verified source evidence</span>
                   </div>
                 </div>

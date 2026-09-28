@@ -8,8 +8,8 @@ if (!fs.existsSync(outputDir)) {
 }
 
 // Copy DOCX demo report to public/sample-pdfs/
-const sourceDocx = path.resolve('GEOVANI_Demo_Mining_Report.docx');
-const destDocx = path.join(outputDir, 'GEOVANI_Demo_Mining_Report.docx');
+const sourceDocx = path.resolve('Sankalan_AI_Demo_Mining_Report.docx');
+const destDocx = path.join(outputDir, 'Sankalan_AI_Demo_Mining_Report.docx');
 if (fs.existsSync(sourceDocx)) {
   fs.copyFileSync(sourceDocx, destDocx);
   console.log(`Copied DOCX demo report: ${destDocx}`);
@@ -25,7 +25,7 @@ doc.rect(0, 0, 210, 38, 'F');
 doc.setTextColor(245, 158, 11); // Amber Gold
 doc.setFontSize(10);
 doc.setFont("helvetica", "bold");
-doc.text("GEOVANI DEMO — VENTILATION & SAFETY MONITORING REPORT", 15, 16);
+doc.text("SANKALAN AI DEMO — VENTILATION & SAFETY MONITORING REPORT", 15, 16);
 
 doc.setTextColor(255, 255, 255);
 doc.setFontSize(12);
@@ -47,7 +47,7 @@ doc.text("Subsidiary: Demo Coal Subsidiary", 20, 67);
 doc.text("Reporting Year: 2025", 20, 74);
 
 doc.text("Topic: Ventilation & Safety Monitoring", 110, 60);
-doc.text("Reference ID: GEOVANI-DEMO-002", 110, 67);
+doc.text("Reference ID: SANKALAN-DEMO-002", 110, 67);
 doc.text("Status: Verified Statutory Data", 110, 74);
 
 // 2. Monitoring Summary
@@ -131,8 +131,8 @@ currentY += 8;
 doc.setFontSize(9);
 doc.setFont("helvetica", "bold");
 doc.setTextColor(100, 116, 139);
-doc.text("Reference: GEOVANI-DEMO-002 | Year: 2025 | Topic: Ventilation & Safety | Status: Verified Synthetic Data", 15, currentY);
+doc.text("Reference: SANKALAN-DEMO-002 | Year: 2025 | Topic: Ventilation & Safety | Status: Verified Synthetic Data", 15, currentY);
 
-const pdfPath = path.join(outputDir, 'GEOVANI_Demo_Ventilation_Safety_Report.pdf');
+const pdfPath = path.join(outputDir, 'Sankalan_AI_Demo_Ventilation_Safety_Report.pdf');
 fs.writeFileSync(pdfPath, Buffer.from(doc.output('arraybuffer')));
 console.log(`Generated Ventilation PDF: ${pdfPath}`);

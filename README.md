@@ -1,4 +1,4 @@
-# GEOVANI — AI-Powered Geological, Mining & Reporting Intelligence Platform
+# SANKALAN AI — AI-Powered Geological, Mining & Reporting Intelligence Platform
 
 [![SIH 2026](https://img.shields.io/badge/SIH-2026-orange.svg)](https://sih2026.vuce.in/en/ps/SIH26023)
 [![Problem Statement](https://img.shields.io/badge/Problem%20Statement-SIH26023-blue.svg)](https://sih2026.vuce.in/en/ps/SIH26023)
@@ -9,7 +9,7 @@
 > **Official Problem Statement (SIH26023):**  
 > **AI-Powered Geological, Mining and other Reporting Solution for CMPDI/CIL subsidiaries**
 
-GEOVANI is an **evidence-first reporting intelligence platform** designed for CMPDI (Central Mine Planning & Design Institute) and Coal India Limited (CIL) subsidiaries. It automates geological, mining, operational, safety, and administrative reporting from scanned PDFs, digital records, spreadsheets, images, historical archives, and ERP/SAP exports.
+SANKALAN AI is an **evidence-first reporting intelligence platform** designed for CMPDI (Central Mine Planning & Design Institute) and Coal India Limited (CIL) subsidiaries. It automates geological, mining, operational, safety, and administrative reporting from scanned PDFs, digital records, spreadsheets, images, historical archives, and ERP/SAP exports.
 
 ---
 
@@ -33,7 +33,7 @@ GEOVANI is an **evidence-first reporting intelligence platform** designed for CM
 
 CMPDI and CIL subsidiaries manage massive datasets spanning diverse formats: scanned PDFs, drilling logs, seam records, daily production sheets, SAP exports, and parliamentary questions. Manual compilation leads to operational delays, transcription errors, loss of historical context, and conflicting metrics between reports.
 
-GEOVANI solves this by combining:
+SANKALAN AI solves this by combining:
 1. **Layout-Aware Document Parsing & OCR** with confidence scoring.
 2. **Structured Fact Extraction & Numeric Validation** from ERP/SAP exports.
 3. **Role & Subsidiary Governed Evidence-First RAG** (Retrieval-Augmented Generation).
@@ -60,13 +60,13 @@ Reviewer Verification + Approval
 ## 📸 Platform Screenshots & UI Showcase
 
 ### 1. Sovereign Energy & Mining Intelligence Landing Page
-![GEOVANI Landing Page](docs/screenshots/01_landing_page.png)
+![SANKALAN AI Landing Page](docs/screenshots/01_landing_page.png)
 *High-impact hero portal featuring live telemetry node counts, indexed document stats, and national CIL mine archives.*
 
 ---
 
 ### 2. Role-Based Access & Subsidiary Auth Workbench
-![GEOVANI Authentication & RBAC](docs/screenshots/02_login_rbac.png)
+![SANKALAN AI Authentication & RBAC](docs/screenshots/02_login_rbac.png)
 *Role-scoped authentication for CIL Administrators, ECL Analysts, MCL Analysts, and Statutory Audit Viewers.*
 
 ---
@@ -121,7 +121,7 @@ Reviewer Verification + Approval
 
 ## 🔬 Research Background and Evidence
 
-GEOVANI is grounded in academic research and official sector frameworks demonstrating the feasibility of document intelligence, NLP, and RAG in mining and government reporting.
+SANKALAN AI is grounded in academic research and official sector frameworks demonstrating the feasibility of document intelligence, NLP, and RAG in mining and government reporting.
 
 ### Problem Context
 
@@ -144,7 +144,7 @@ Manual compilation creates delays, transcription errors, dependency on individua
 
 Research shows that generative AI, document parsing, OCR, table extraction and information retrieval can be used to digitize and search geological documents.
 
-This supports GEOVANI's geological-report pipeline, which preserves source pages, extracts geological entities and enables source-grounded search.
+This supports SANKALAN AI's geological-report pipeline, which preserves source pages, extracts geological entities and enables source-grounded search.
 
 **Relevant Research:**
 - [Advancing Geologic Document Digitalization and Information Retrieval with Generative AI](https://www.viridiengroup.com/sites/default/files/2025-02/advancing-geologic-document-digitalization-Information-retrieval-gen-ai-viridien-tle-article-feb-2025.pdf) (Viridien, TLE 2025)
@@ -152,7 +152,7 @@ This supports GEOVANI's geological-report pipeline, which preserves source pages
 - [Deep Learning-Based Mineral Exploration Named Entity Recognition](https://doi.org/10.1016/j.oregeorev.2024.106367) (*Ore Geology Reviews*, 2024)
 - [Applications of Deep Learning for Mineral Exploration and Geological Data Analysis in Mining](https://gjeta.com/sites/default/files/fulltext_pdf/GJETA-2025-0209.pdf) (*GJETA*, 2025)
 
-**GEOVANI Implementation Implication:**
+**SANKALAN AI Implementation Implication:**
 
 ```text
 Geological Reports
@@ -170,7 +170,7 @@ Structured Geological Knowledge Base
 
 Research shows that OCR errors can cascade into retrieval and AI-answering errors. Therefore, scanned documents should not be trusted blindly.
 
-GEOVANI uses:
+SANKALAN AI uses:
 - OCR confidence scores
 - Original document page preview
 - Page-level source linking
@@ -190,7 +190,7 @@ GEOVANI uses:
 
 #### 3. RAG for Government and Parliamentary Queries
 
-Retrieval-Augmented Generation (RAG) is suitable for high-stakes document Q&A because it retrieves evidence before generating an answer. GEOVANI does not use a general chatbot approach. It follows an **evidence-first RAG approach**:
+Retrieval-Augmented Generation (RAG) is suitable for high-stakes document Q&A because it retrieves evidence before generating an answer. SANKALAN AI does not use a general chatbot approach. It follows an **evidence-first RAG approach**:
 
 ```text
 Officer Question
@@ -212,7 +212,7 @@ Show Answer + Citation + Confidence + Status
 - [PolicyBot: Reliable Question Answering over Policy Documents](https://arxiv.org/abs/2511.13489) (arXiv, 2025)
 - [IR 4.0 in Parliament: Conceptualising the Use of AI in Parliamentary Business](https://gaexcellence.com/ijlgc/article/view/2080) (*IJLGC*, 2024)
 
-**GEOVANI Answer Policy:**
+**SANKALAN AI Answer Policy:**
 - **If verified evidence is available:** Show answer with document name and exact page number.
 - **If records conflict:** Show all conflicting values and request human verification.
 - **If evidence is unavailable:** *"Reliable evidence was not found in the available approved documents."*
@@ -229,7 +229,7 @@ Mining reports contain recurring patterns related to production, safety, equipme
 - [BERTopic: Neural Topic Modeling with a Class-Based TF-IDF Procedure](https://arxiv.org/abs/2203.05794) (arXiv, 2022)
 - [Scikit-learn TfidfVectorizer Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
 
-**GEOVANI Topic Pipeline:**
+**SANKALAN AI Topic Pipeline:**
 ```text
 Authorized Document Text
       ↓
@@ -286,7 +286,7 @@ The Indian coal sector already has official digital-reporting, statistical and A
 
 ### Existing Platform Analysis
 
-| Platform | Existing Capability | GEOVANI Gap Filled |
+| Platform | Existing Capability | SANKALAN AI Gap Filled |
 |---|---|---|
 | [MoSPI StatsDoc AI](https://www.mospi.gov.in/) | Government document search and AI assistance | Mining/geology extraction, subsidiary access, reporting workflow |
 | [Granthik](https://app.setidure.com/products/granthik) | OCR + private RAG document intelligence | Coal-sector data model, reporting templates, conflict detection |
@@ -299,7 +299,7 @@ The Indian coal sector already has official digital-reporting, statistical and A
 
 ## 💡 Key Innovation
 
-GEOVANI does not claim to invent OCR, RAG or SAP integration. Its innovation is combining proven technologies into **one domain-specific, governed workflow**:
+SANKALAN AI does not claim to invent OCR, RAG or SAP integration. Its innovation is combining proven technologies into **one domain-specific, governed workflow**:
 
 ```text
 Structured SAP/ERP Data
@@ -336,7 +336,7 @@ Approval-Ready CMPDI/CIL Reporting Intelligence
 
 ```text
                                   ┌─────────────────────────────┐
-                                  │          GEOVANI            │
+                                  │          SANKALAN AI            │
                                   │ Mining Knowledge & Reporting│
                                   │        Intelligence         │
                                   └──────────────┬──────────────┘
@@ -427,7 +427,7 @@ Approval-Ready CMPDI/CIL Reporting Intelligence
                └───────────────────────┼───────────────────────┘
                                        ↓
                             ┌──────────────────────┐
-                            │  GEOVANI RETRIEVAL   │
+                            │  SANKALAN AI RETRIEVAL   │
                             │       ENGINE         │
                             └──────────┬───────────┘
                                        │
@@ -548,13 +548,13 @@ Approval-Ready CMPDI/CIL Reporting Intelligence
 ```text
 Team_Forven_SCET_121491/
 ├── docs/                                     # Comprehensive Technical & Research Specs
-│   ├── GEOVANI_Technical_PRD.md              # Technical Architecture & API Blueprint
-│   ├── GEOVANI_Frontend_PRD.md               # Frontend Design System & UI Specifications
-│   └── GEOVANI_Research_Evidence_Case_Study.md # Full Research Case Study & Academic Citations
-├── GEOVANI_Demo_Frontend_PRD.docx            # Original Microsoft Word Spec (Frontend)
-├── GEOVANI_Demo_Mining_Report.docx           # Sample Mining Report Output (DOCX)
-├── GEOVANI_Research_Evidence_Case_Study.docx # Original Research Case Study (DOCX)
-├── GEOVANI_Technical_PRD.docx                # Original Microsoft Word Spec (Technical)
+│   ├── SANKALAN_AI_Technical_PRD.md              # Technical Architecture & API Blueprint
+│   ├── SANKALAN_AI_Frontend_PRD.md               # Frontend Design System & UI Specifications
+│   └── SANKALAN_AI_Research_Evidence_Case_Study.md # Full Research Case Study & Academic Citations
+├── Sankalan_AI_Demo_Frontend_PRD.docx            # Original Microsoft Word Spec (Frontend)
+├── Sankalan_AI_Demo_Mining_Report.docx           # Sample Mining Report Output (DOCX)
+├── Sankalan_AI_Research_Evidence_Case_Study.docx # Original Research Case Study (DOCX)
+├── Sankalan_AI_Technical_PRD.docx                # Original Microsoft Word Spec (Technical)
 ├── public/                                   # Static Assets & Sample PDF Reports
 ├── scripts/                                  # Demo PDF & Mock Dataset Generators
 ├── src/                                      # React + Vite Source Code
@@ -616,10 +616,10 @@ Team_Forven_SCET_121491/
 ## 📄 Documentation & PRDs
 
 Detailed technical specs and research background documents are provided in the repo:
-- 📖 [Technical PRD](docs/GEOVANI_Technical_PRD.md) / [DOCX](GEOVANI_Technical_PRD.docx)
-- 🎨 [Frontend PRD](docs/GEOVANI_Frontend_PRD.md) / [DOCX](GEOVANI_Demo_Frontend_PRD.docx)
-- 🔬 [Research Case Study](docs/GEOVANI_Research_Evidence_Case_Study.md) / [DOCX](GEOVANI_Research_Evidence_Case_Study.docx)
-- 📊 [Sample Mining Report](GEOVANI_Demo_Mining_Report.docx)
+- 📖 [Technical PRD](docs/SANKALAN_AI_Technical_PRD.md) / [DOCX](Sankalan_AI_Technical_PRD.docx)
+- 🎨 [Frontend PRD](docs/SANKALAN_AI_Frontend_PRD.md) / [DOCX](Sankalan_AI_Demo_Frontend_PRD.docx)
+- 🔬 [Research Case Study](docs/SANKALAN_AI_Research_Evidence_Case_Study.md) / [DOCX](Sankalan_AI_Research_Evidence_Case_Study.docx)
+- 📊 [Sample Mining Report](Sankalan_AI_Demo_Mining_Report.docx)
 
 ---
 

@@ -314,7 +314,7 @@ export const LandingPage = () => {
         </section>
 
         {/* ========================================================================= */}
-        {/* SECTION 3: HOW GEOVANI WORKS                                              */}
+        {/* SECTION 3: HOW SANKALAN AI WORKS                                          */}
         {/* ========================================================================= */}
         <section id="workflow" className="w-full py-space-xl bg-surface-container-lowest">
           <div className="w-full max-w-7xl mx-auto px-margin-desktop">
@@ -364,7 +364,7 @@ export const LandingPage = () => {
                   Deterministic AI Query & Evidence Validation
                 </h2>
                 <p className="font-body-md text-body-md text-on-surface-variant mt-space-xs">
-                  Experience how GEOVANI answers complex technical queries with fully inspectable citations.
+                  Experience how Sankalan AI answers complex technical queries with fully inspectable citations.
                 </p>
               </div>
               <Link
@@ -455,13 +455,13 @@ export const LandingPage = () => {
                   From Data Overload to Mining Intelligence.
                 </h2>
                 <p className="font-body-lg text-body-lg text-on-surface-variant mt-space-sm mb-space-lg leading-relaxed">
-                  Transform fragmented mining records, analog boreholes, and telemetry logs into evidence-linked insights with GEOVANI.
+                  Transform fragmented mining records, analog boreholes, and telemetry logs into evidence-linked insights with Sankalan AI.
                 </p>
                 <Link
                   to="/dashboard"
                   className="inline-flex items-center justify-center gap-space-xs px-space-xl h-11 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all"
                 >
-                  <span>Launch GEOVANI Platform</span>
+                  <span>Launch Sankalan AI Platform</span>
                   <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
                 </Link>
               </div>
@@ -473,7 +473,7 @@ export const LandingPage = () => {
       {/* Footer */}
       <footer className="w-full bg-surface-container-low border-t border-surface-container-highest py-margin-desktop">
         <div className="w-full px-margin-desktop text-center text-secondary font-body-sm text-body-sm">
-          © 2026 GEOVANI — Mining Intelligence Platform. Prototype Demo — Sample Data.
+          © 2026 Sankalan AI — Mining Intelligence Platform. Prototype Demo — Sample Data.
         </div>
       </footer>
     </div>

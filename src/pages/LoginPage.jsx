@@ -66,7 +66,7 @@ export const LoginPage = () => {
                 <span className="material-symbols-outlined text-[24px]">layers</span>
               </div>
               <div className="flex flex-col">
-                <span className="font-headline-sm text-headline-sm font-extrabold uppercase tracking-tight text-on-surface">GEOVANI</span>
+                <span className="font-headline-sm text-headline-sm font-extrabold uppercase tracking-tight text-on-surface">SANKALAN AI</span>
                 <span className="text-xs text-secondary font-semibold uppercase tracking-wider">Mining Intelligence Platform</span>
               </div>
             </div>
@@ -107,7 +107,7 @@ export const LoginPage = () => {
           
           <div>
             <div className="space-y-1 mb-6">
-              <h1 className="text-2xl font-bold text-on-surface tracking-tight">Welcome to GEOVANI</h1>
+              <h1 className="text-2xl font-bold text-on-surface tracking-tight">Welcome to Sankalan AI</h1>
               <p className="text-xs text-secondary font-medium">
                 Mining Intelligence & Evidence Platform — Enter credentials or select a demo role.
               </p>

@@ -1,4 +1,4 @@
-# GEOVANI — Research Background & Evidence Case Study
+# SANKALAN AI — Research Background & Evidence Case Study
 
 > **SIH26023 — AI-Powered Geological, Mining and other Reporting Solution for CMPDI/CIL subsidiaries**
 
@@ -6,7 +6,7 @@
 
 ## Executive Summary & Research Background
 
-GEOVANI is designed as an evidence-first reporting intelligence platform for Smart India Hackathon Problem Statement SIH26023. The problem requires automation of geological, mining, production and administrative reporting from scanned PDFs, digital records, spreadsheets, images and historical archives. It also requires automated report generation, word cloud/topic identification and AI-based query-response capabilities.
+SANKALAN AI is designed as an evidence-first reporting intelligence platform for Smart India Hackathon Problem Statement SIH26023. The problem requires automation of geological, mining, production and administrative reporting from scanned PDFs, digital records, spreadsheets, images and historical archives. It also requires automated report generation, word cloud/topic identification and AI-based query-response capabilities.
 
 ---
 
@@ -14,7 +14,7 @@ GEOVANI is designed as an evidence-first reporting intelligence platform for Sma
 
 Research shows that generative AI, document parsing, OCR, table extraction and information retrieval can be used to digitize and search geological documents.
 
-This supports GEOVANI's geological-report pipeline, which preserves source pages, extracts geological entities and enables source-grounded search.
+This supports SANKALAN AI's geological-report pipeline, which preserves source pages, extracts geological entities and enables source-grounded search.
 
 **Relevant research:**
 - [Advancing Geologic Document Digitalization and Information Retrieval with Generative AI](https://www.viridiengroup.com/sites/default/files/2025-02/advancing-geologic-document-digitalization-Information-retrieval-gen-ai-viridien-tle-article-feb-2025.pdf)
@@ -26,7 +26,7 @@ This supports GEOVANI's geological-report pipeline, which preserves source pages
 
 ## 2. OCR Quality & Verification
 
-Research proves OCR noise cascades into retrieval errors in RAG systems. GEOVANI mitigates this via:
+Research proves OCR noise cascades into retrieval errors in RAG systems. SANKALAN AI mitigates this via:
 - Bounding-box OCR score checks
 - Source-page previews alongside extracted text
 - Low-confidence review flags for human verification

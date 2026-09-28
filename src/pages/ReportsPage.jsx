@@ -209,7 +209,7 @@ export const ReportsPage = () => {
                   <div className="text-center pb-4 border-b-2 border-primary/30">
                     <div className="flex items-center justify-center gap-2 text-primary font-bold text-xs uppercase tracking-widest mb-1">
                       <span className="material-symbols-outlined text-[18px]">layers</span>
-                      GEOVANI — SOVEREIGN MINING INTELLIGENCE
+                      SANKALAN AI — SOVEREIGN MINING INTELLIGENCE
                     </div>
                     <h2 className="text-lg font-black uppercase text-gray-900 tracking-tight">
                       {selectedReport.title}
@@ -301,7 +301,7 @@ export const ReportsPage = () => {
                   {/* Footer Disclaimer */}
                   <div className="pt-4 border-t border-gray-200 text-center text-[10px] text-gray-500 font-mono">
                     <p className="font-bold text-gray-700">Prototype demonstration using sample data. Not an operational CIL/CMPDI report.</p>
-                    <p>Evidence-backed report generated via GEOVANI Multimodal RAG Engine.</p>
+                    <p>Evidence-backed report generated via Sankalan AI Multimodal RAG Engine.</p>
                   </div>
 
                 </div>

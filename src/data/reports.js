@@ -8,7 +8,7 @@ export const INITIAL_REPORTS = [
     period: "Q3 (FY 2024–25)",
     createdAt: "2025-01-25",
     status: "Approved",
-    author: "GEOVANI Evidence Engine",
+    author: "Sankalan AI Evidence Engine",
     sourcesCount: 6,
     evidenceCount: 18,
     executiveSummary: "Aggregated production across Sector South-IV reached 5.59 MT in Q3 with a composite stripping ratio of 1:2.84. Equipment availability averaged 91.4% with zero critical safety violations reported by DGMS audit.",

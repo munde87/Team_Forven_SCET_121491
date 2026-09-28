@@ -1,12 +1,12 @@
-# GEOVANI — Technical Product Requirements Document (PRD)
+# SANKALAN AI — Technical Product Requirements Document (PRD)
 
-*Production-oriented technical blueprint for the GEOVANI demo and future deployable system.*
+*Production-oriented technical blueprint for the SANKALAN AI demo and future deployable system.*
 
 ---
 
 ## 1. Technical Objective
 
-Define the technical architecture and implementation contract for GEOVANI: an evidence-first mining intelligence platform that ingests heterogeneous mining records and structured mine data, performs document intelligence and domain enrichment, creates multimodal retrieval representations, retrieves and verifies evidence, and exposes three outputs:
+Define the technical architecture and implementation contract for SANKALAN AI: an evidence-first mining intelligence platform that ingests heterogeneous mining records and structured mine data, performs document intelligence and domain enrichment, creates multimodal retrieval representations, retrieves and verifies evidence, and exposes three outputs:
 1. **AI Query & Evidence**
 2. **Automated Report Generation**
 3. **Document & Topic Intelligence**
@@ -19,7 +19,7 @@ The frontend demo may use mock services, while the architecture remains compatib
 
 ```text
                                   ┌─────────────────────────────┐
-                                  │          GEOVANI            │
+                                  │          SANKALAN AI            │
                                   │ Mining Knowledge & Reporting│
                                   │        Intelligence         │
                                   └──────────────┬──────────────┘
@@ -110,7 +110,7 @@ The frontend demo may use mock services, while the architecture remains compatib
                └───────────────────────┼───────────────────────┘
                                        ↓
                             ┌──────────────────────┐
-                            │  GEOVANI RETRIEVAL   │
+                            │  SANKALAN AI RETRIEVAL   │
                             │       ENGINE         │
                             └──────────┬───────────┘
                                        │

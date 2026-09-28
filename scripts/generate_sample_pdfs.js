@@ -17,7 +17,7 @@ function buildPDF(filename, title, subtitle, org, mine, date, summary, keyFindin
   doc.setTextColor(245, 158, 11); // Amber Gold
   doc.setFontSize(10);
   doc.setFont("helvetica", "bold");
-  doc.text("GEOVANI — SOVEREIGN MINING INTELLIGENCE PLATFORM", 15, 15);
+  doc.text("SANKALAN AI — SOVEREIGN MINING INTELLIGENCE PLATFORM", 15, 15);
 
   doc.setTextColor(255, 255, 255);
   doc.setFontSize(14);

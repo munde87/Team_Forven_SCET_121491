@@ -107,7 +107,7 @@ export const Dashboard = () => {
               className="inline-flex items-center gap-space-xs px-space-lg h-9 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container transition-colors"
             >
               <span className="material-symbols-outlined text-[18px]">smart_toy</span>
-              <span>Ask GEOVANI</span>
+              <span>Ask Sankalan AI</span>
             </Link>
           </div>
         </div>

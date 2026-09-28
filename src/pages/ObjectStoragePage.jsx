@@ -33,14 +33,14 @@ export const ObjectStoragePage = () => {
   });
 
   const handleCopyUri = (filename) => {
-    const uri = `s3://geovani-sovereign-vault/raw-documents/2025/${filename}`;
+    const uri = `s3://sankalan-sovereign-vault/raw-documents/2025/${filename}`;
     navigator.clipboard?.writeText(uri);
     showToast(`Copied Object Storage URI: ${uri}`, "success");
   };
 
   const handleDownloadOriginal = (doc) => {
     // If sample PDF/DOCX exists in sample-pdfs, trigger download
-    const isSamplePdf = doc.filename.includes("Sample_") || doc.filename.includes("GEOVANI_Demo");
+    const isSamplePdf = doc.filename.includes("Sample_") || doc.filename.includes("Sankalan_AI_Demo") || doc.filename.includes("GEOVANI_Demo");
     const downloadPath = isSamplePdf
       ? `/sample-pdfs/${doc.filename}`
       : `/sample-pdfs/Sample_Safety_Audit_2025.pdf`;
@@ -95,7 +95,7 @@ export const ObjectStoragePage = () => {
               <span className="material-symbols-outlined text-primary text-[18px]">cloud</span>
             </div>
             <span className="text-xs font-mono font-bold text-primary block truncate">
-              s3://geovani-vault/raw/
+              s3://sankalan-vault/raw/
             </span>
             <span className="text-[10px] text-secondary font-mono">AES-256 Sovereign Encrypted</span>
           </div>
@@ -198,7 +198,7 @@ export const ObjectStoragePage = () => {
                           <div className="min-w-0">
                             <span className="font-bold text-on-surface block truncate">{doc.title}</span>
                             <span className="text-[11px] text-primary font-mono block truncate">
-                              s3://geovani-vault/raw-documents/{doc.filename}
+                              s3://sankalan-vault/raw-documents/{doc.filename}
                             </span>
                           </div>
                         </div>

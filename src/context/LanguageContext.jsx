@@ -5,12 +5,12 @@ const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
   const [lang, setLang] = useState(() => {
-    const saved = localStorage.getItem("geovani_lang");
+    const saved = localStorage.getItem("sankalan_lang") || localStorage.getItem("geovani_lang");
     return saved && TRANSLATIONS[saved] ? saved : "en";
   });
 
   useEffect(() => {
-    localStorage.setItem("geovani_lang", lang);
+    localStorage.setItem("sankalan_lang", lang);
   }, [lang]);
 
   const toggleLanguage = () => {

@@ -25,12 +25,12 @@ export const Navbar = () => {
         <div className="flex items-center gap-space-lg">
           <Link to="/" className="flex items-center gap-space-sm group">
             <img
-              src="/geovani_logo.png"
-              alt="GEOVANI Logo"
+              src="/sankalan_logo.png"
+              alt="Sankalan AI Logo"
               className="w-10 h-10 rounded-lg object-contain shadow-md group-hover:scale-105 transition-transform"
             />
             <div className="flex flex-col">
-              <span className="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-black text-primary">GEOVANI</span>
+              <span className="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-black text-primary">SANKALAN AI</span>
               <span className="font-label-sm text-[10px] tracking-wide text-secondary uppercase font-bold">{t.platformTitle}</span>
             </div>
           </Link>
@@ -137,7 +137,7 @@ export const Navbar = () => {
 
                   <div className="border-t border-surface-container-high pt-2 text-center">
                     <span className="text-[10px] text-secondary font-mono">
-                      GEOVANI SIH Demo Access • Active Session
+                      Sankalan AI SIH Demo Access • Active Session
                     </span>
                   </div>
 

@@ -1,11 +1,11 @@
-# GEOVANI — Mining Intelligence & Reporting Platform
+# SANKALAN AI — Mining Intelligence & Reporting Platform
 ## Project Analysis & Progress History Record
 
 ---
 
 ### Executive Overview
 
-**GEOVANI** is an enterprise/sovereign-grade **Mining Intelligence & Automated Reporting Platform** engineered for processing heterogeneous mining documentation, geological archives, operational data, and statutory filings. The application provides an evidence-linked Multimodal Retrieval-Augmented Generation (RAG) system, deep document intelligence, automated sovereign report compilation, and domain topic/entity analytics.
+**SANKALAN AI** is an enterprise/sovereign-grade **Mining Intelligence & Automated Reporting Platform** engineered for processing heterogeneous mining documentation, geological archives, operational data, and statutory filings. The application provides an evidence-linked Multimodal Retrieval-Augmented Generation (RAG) system, deep document intelligence, automated sovereign report compilation, and domain topic/entity analytics.
 
 This document serves as a complete history record of the project's vision, technical architecture, completed milestones, components, data flows, and current operational state.
 
@@ -38,7 +38,7 @@ This document serves as a complete history record of the project's vision, techn
 - **`Toast.jsx`**: Non-intrusive floating toast notifications for user action feedback.
 
 #### 2. Landing Page (`LandingPage.jsx`)
-- Executive entry point introducing GEOVANI's vision and value proposition.
+- Executive entry point introducing SANKALAN AI's vision and value proposition.
 - Feature highlight grid covering Document Intelligence, Multimodal RAG, Verification Engine, and Automated Reports.
 - Live pipeline workflow animation.
 - Direct quick-start CTAs into the Dashboard and Query Workbench.
@@ -98,16 +98,16 @@ This document serves as a complete history record of the project's vision, techn
 #### 9. Common Components & Services
 - **`SourceViewerDrawer.jsx`**: Slide-over drawer demonstrating target snippet bounding boxes and an expandable *"Why this answer?"* retrieval trace.
 - **`AppContext.jsx`**: Global React Context managing persistent state across sessions via `localStorage` keys:
-  - `geovani_documents`
-  - `geovani_reports`
-  - `geovani_queries`
+  - `sankalan-ai_documents`
+  - `sankalan-ai_reports`
+  - `sankalan-ai_queries`
 
 ---
 
 ### Summary of Completed Workspace Files
 
 ```
-GEOVANI/
+SANKALAN AI/
 ├── package.json                        # Dependencies (React 19, Vite 6, Tailwind, Lucide, Recharts, Framer Motion)
 ├── vite.config.js                      # Vite build setup
 ├── tailwind.config.js                  # Custom design tokens & theme customization

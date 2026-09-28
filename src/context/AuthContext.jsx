@@ -5,7 +5,7 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(() => {
-    const saved = localStorage.getItem("geovani_auth");
+    const saved = localStorage.getItem("sankalan_auth") || localStorage.getItem("geovani_auth");
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
@@ -21,8 +21,9 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     if (user) {
-      localStorage.setItem("geovani_auth", JSON.stringify(user));
+      localStorage.setItem("sankalan_auth", JSON.stringify(user));
     } else {
+      localStorage.removeItem("sankalan_auth");
       localStorage.removeItem("geovani_auth");
     }
   }, [user]);
@@ -50,6 +51,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = () => {
     setUser(null);
+    localStorage.removeItem("sankalan_auth");
     localStorage.removeItem("geovani_auth");
   };
 
