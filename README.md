@@ -59,6 +59,12 @@ Reviewer Verification + Approval
 
 ## 📸 Platform Screenshots & UI Showcase
 
+### 0. Master End-to-End Enterprise Architecture Diagram
+![SANKALAN AI Master System Architecture Diagram](docs/screenshots/00_system_architecture_diagram.png)
+*Complete 13-module enterprise architecture blueprint displaying multi-service data ingestion, document intelligence OCR, hybrid vector store, anti-hallucination verification, private vLLM inference, and source traceability.*
+
+---
+
 ### 1. Sovereign Energy & Mining Intelligence Landing Page
 ![SANKALAN AI Landing Page](docs/screenshots/01_landing_page.png)
 *High-impact hero portal featuring live telemetry node counts, indexed document stats, and national CIL mine archives.*
