@@ -57,6 +57,73 @@ Reviewer Verification + Approval
 
 ---
 
+## 📸 Platform Screenshots & UI Showcase
+
+### 1. Sovereign Energy & Mining Intelligence Landing Page
+![SANKALAN AI Landing Page](docs/screenshots/01_landing_page.png)
+*High-impact hero portal featuring live telemetry node counts, indexed document stats, and national CIL mine archives.*
+
+---
+
+### 2. Role-Based Access & Subsidiary Auth Workbench
+![SANKALAN AI Authentication & RBAC](docs/screenshots/02_login_rbac.png)
+*Role-scoped authentication for CIL Administrators, ECL Analysts, MCL Analysts, and Statutory Audit Viewers.*
+
+---
+
+### 3. CIL Enterprise Intelligence Hub & Executive Dashboard
+![CIL Enterprise Intelligence Hub](docs/screenshots/03_dashboard_hub.png)
+*Unified enterprise intelligence dashboard showcasing indexed documents, mine sites, verification pipelines, and AI query suggestions.*
+
+---
+
+### 4. Multimodal AI Query & Domain Scope Workbench
+![Multimodal AI Query & Scope Selector](docs/screenshots/03_ai_query_verification.png)
+*Interactive query interface with domain-focused targeting (Production & Logistics, Geology, Equipment, Environment) and reporting period scope controls.*
+
+---
+
+### 5. Evidence-Grounded AI Answer & Citation Traceability
+![Grounded Answer & Citations](docs/screenshots/04_ai_query_answer_citations.png)
+*100% Citation-verified answers with automated 5-year growth trajectory calculations, real-time candidate verification audit ledger, and explicit mismatch rejection.*
+
+---
+
+### 6. Document Intelligence & Statutory Library
+![Document Library](docs/screenshots/05_document_library.png)
+*Comprehensive statutory document library with confidence scores, subsidiary tags, and one-click report generation.*
+
+---
+
+### 7. Object Storage Vault (S3 Raw File Storage & Checksums)
+![Object Storage Vault](docs/screenshots/06_object_storage_vault.png)
+*Enterprise S3 raw object store displaying immutable SHA-256 integrity hashes, document URIs, and download/inspect controls.*
+
+---
+
+### 8. Automated Statutory Reports Exporter Studio
+![Statutory Reports Studio](docs/screenshots/07_statutory_reports_studio.png)
+*Pre-formatted statutory report studio rendering executive summaries, key findings, and page-cited sources for official release.*
+
+---
+
+### 9. Mining Intelligence & Subsidiary Scope Explorer
+![Mining Intelligence Scope](docs/screenshots/08_mining_intelligence_scope.png)
+*Faceted organization scope (CIL, ECL, BCCL, CCL, NCL, SECL, WCL, MCL, CMPDI, NEC) and interactive mining keyword cloud.*
+
+---
+
+### 10. Geotechnical Telemetry & Slope Stability Benchmark Metrics
+![Slope Stability Benchmark Metrics](docs/screenshots/09_telemetry_slope_stability.png)
+*Real-time geotechnical metrics (Factor of Safety 1.42, Radar Displacement Rate 0.4mm/day, Bench Slope Angle 45°) and bounding-box page preview.*
+
+---
+
+### 11. Multi-Batch Ingestion Workbench & Drag-and-Drop Ingester
+![Multi-File Ingestion Workbench](docs/screenshots/10_multi_file_ingestion_workbench.png)
+*Drag-and-drop multi-file ingester supporting PDF, DOCX, XLSX, CSV, PNG, JPG, and CAD DWG mining records.*
+
+---
 
 ## 🔬 Research Background and Evidence
 
@@ -273,184 +340,152 @@ Approval-Ready CMPDI/CIL Reporting Intelligence
 
 ## 🗺️ Detailed System Architecture & Knowledge Pipeline
 
+### 💡 Executive Pitch for Evaluators & Judges
+> **"From user query to final answer, SANKALAN AI first retrieves the evidence, verifies it, generates a grounded response, and finally provides complete source traceability."**
+
+---
+
+### 🔄 End-to-End User Flow
+
+#### 🎯 Presentation 7-Box Core Flow
 ```text
-                                  ┌─────────────────────────────┐
-                                  │          SANKALAN AI            │
-                                  │ Mining Knowledge & Reporting│
-                                  │        Intelligence         │
-                                  └──────────────┬──────────────┘
-                                                 │
-                                                 ↓
-                                  ┌─────────────────────────────┐
-                                  │        DATA SOURCES         │
-                                  └──────────────┬──────────────┘
-                                                 │
-                    ┌────────────────────────────┼────────────────────────────┐
-                    ↓                            ↓                            ↓
-              USER UPLOAD                     SAP                    EXISTING DATA
-                    │                     Coal Mine Data                    │
-                    │                            │                          │
-        ┌───────────┼────────────┐              │                          │
-        ↓           ↓            ↓              ↓                          ↓
-      PDF/SCAN    EXCEL/CSV    WORD       SAP RECORDS                DATABASE
-      IMAGE/MAP   REPORTS      DOCS
-        │           │            │              │
-        └───────────┴────────────┴──────────────┴──────────────────────────┘
-                                      │
-                                      ↓
-                         ┌────────────────────────┐
-                         │ FILE / DATA DETECTION  │
-                         │ PDF • Scan • Excel     │
-                         │ Word • Image • SAP     │
-                         └────────────┬───────────┘
-                                      │
-                                      ↓
-                    ┌────────────────────────────────┐
-                    │     DOCUMENT INTELLIGENCE      │
-                    └────────────────┬───────────────┘
-                                     │
-                ┌────────────────────┼────────────────────┐
-                ↓                    ↓                    ↓
-             TEXT                 TABLES             FIGURES / MAPS
-                │                    │                    │
-             OCR*              Table Extraction     Image Extraction
-          Layout Parsing       Row/Column Data       Caption Detection
-          Page Mapping         Table Metadata        Map Metadata
-                │                    │                    │
-                └────────────────────┼────────────────────┘
-                                     │
-                                     ↓
-                         ┌────────────────────────┐
-                         │    DOMAIN ENRICHMENT   │
-                         ├────────────────────────┤
-                         │ Mine • Subsidiary      │
-                         │ Location • Year        │
-                         │ Production • Equipment │
-                         │ Seam • Geology         │
-                         │ Topic • Keywords       │
-                         └────────────┬───────────┘
-                                      │
-                                      ↓
-                         ┌────────────────────────┐
-                         │   SEMANTIC CHUNKING     │
-                         └────────────┬───────────┘
-                                      │
-                 ┌────────────────────┼────────────────────┐
-                 ↓                    ↓                    ↓
-             TEXT CHUNKS         TABLE CHUNKS        IMAGE / MAP
-                                                        REPRESENTATION
-                 └────────────────────┼────────────────────┘
-                                      │
-                                      ↓
-                         ┌────────────────────────┐
-                         │ MULTIMODAL EMBEDDINGS  │
-                         └────────────┬───────────┘
-                                      │
-                                      ↓
-                         ┌────────────────────────┐
-                         │      KNOWLEDGE STORE   │
-                         └────────────┬───────────┘
-                                      │
-              ┌───────────────────────┼────────────────────────┐
-              ↓                       ↓                        ↓
-        ┌────────────┐          ┌────────────┐          ┌──────────────┐
-        │ PostgreSQL │          │  pgvector  │          │Object Storage│
-        ├────────────┤          ├────────────┤          ├──────────────┤
-        │Structured  │          │Embeddings  │          │Original PDF  │
-        │SAP Data    │          │Text Vectors│          │Excel / Word  │
-        │Tables      │          │Image/Map   │          │Images / Maps │
-        │Metadata    │          │Vectors     │          │Source Files  │
-        │Topics      │          │Chunks      │          │              │
-        └──────┬─────┘          └──────┬─────┘          └──────┬───────┘
-               │                       │                       │
-               └───────────────────────┼───────────────────────┘
-                                       ↓
-                            ┌──────────────────────┐
-                            │  SANKALAN AI RETRIEVAL   │
-                            │       ENGINE         │
-                            └──────────┬───────────┘
-                                       │
-                                       ↓
-                               ┌───────────────┐
-                               │   USER / TASK │
-                               └───────┬───────┘
-                                       │
-                                       ↓
-                             ┌───────────────────┐
-                             │ QUERY UNDERSTAND. │
-                             └─────────┬─────────┘
-                                       │
-                 ┌─────────────────────┼─────────────────────┐
-                 ↓                     ↓                     ↓
-       ┌──────────────────┐  ┌──────────────────┐  ┌─────────────────────┐
-       │  MODULE 1        │  │   MODULE 2       │  │     MODULE 3        │
-       │ AI QUERY &       │  │ AUTOMATED        │  │ TOPIC & KNOWLEDGE   │
-       │ RESPONSE         │  │ REPORT GENERATION│  │ EXPLORER             │
-       └────────┬─────────┘  └────────┬─────────┘  └──────────┬──────────┘
-                │                     │                       │
-                ↓                     ↓                       ↓
-       Structured Query       Report Parameters         Keyword / Topic
-       + Document Query       + Filters                 + Filters
-                │                     │                       │
-                ↓                     ↓                       ↓
-       PostgreSQL +            PostgreSQL +            PostgreSQL +
-       pgvector                pgvector                pgvector
-                │                     │                       │
-                ↓                     ↓                       ↓
-       Exact Data +            Structured Data +        Frequency / TF-IDF
-       Relevant Chunks         Relevant Chunks          Topics / Relations
-                │                     │                       │
-                └─────────────────────┼───────────────────────┘
-                                      │
-                                      ↓
-                             ┌─────────────────┐
-                             │ RELEVANT        │
-                             │ EVIDENCE SET    │
-                             └────────┬────────┘
-                                      │
-                                      ↓
-                             ┌─────────────────┐
-                             │      vLLM       │
-                             │ PRIVATE LLM     │
-                             │ INFERENCE SERVER│
-                             └────────┬────────┘
-                                      │
-                    ┌─────────────────┼─────────────────────┐
-                    ↓                 ↓                     ↓
-             ┌─────────────┐   ┌──────────────┐    ┌────────────────┐
-             │   ANSWER    │   │    REPORT    │    │    INSIGHTS    │
-             │             │   │              │    │                │
-             │ Query       │   │ DOCX / PDF   │    │ Topics         │
-             │ Response    │   │ Charts       │    │ Trends         │
-             │ Citation    │   │ Tables       │    │                │
-             └──────┬──────┘   └───────┬──────┘    └───────┬────────┘
-                    │                  │                    │
-                    └──────────────────┼────────────────────┘
-                                       ↓
-                         ┌─────────────────────────┐
-                         │ SOURCE TRACEABILITY     │
-                         ├─────────────────────────┤
-                         │ Document • Page • Year  │
-                         │ Section • Source        │
-                         └────────────┬────────────┘
-                                      │
-                                      ↓
-                         ┌─────────────────────────┐
-                         │      REACT DASHBOARD    │
-                         ├─────────────────────────┤
-                         │                         │
-                         │  QUERY & RESPONSE       │
-                         │  REPORT GENERATION      │
-                         │  TOPIC / KNOWLEDGE      │
-                         │  GRAPHS • TABLES        │
-                         │  WORD CLOUD             │
-                         │  SOURCE DOCUMENTS       │
-                         │                         │
-                         └────────────┬────────────┘
-                                      │
-                                      ↓
-                              USER GETS RESULT
+Login → Dashboard → Query / Document → Hybrid Retrieval → Verify → AI Generate → Source-Linked Output
 ```
+
+#### ⚡ Core Execution Axiom
+```text
+Retrieve → Verify → Generate → Trace → Review
+```
+
+#### 👤 Step-by-Step User Experience
+
+1. **Login & Role Authorization**  
+   User authenticates according to their role (CIL Administrator, Subsidiary Admin, Geological Expert, Mining Engineer, Analyst, or Viewer) with strict organizational scope (CIL, ECL, BCCL, CCL, NCL, WCL, SECL, MCL, CMPDI).
+2. **Dashboard Overview**  
+   User accesses live metrics, indexed document counts, telemetry nodes, mine coverage, and quick-action launcher for AI Queries, Documents, and Reports.
+3. **Ask / Upload Action**  
+   User submits natural language questions ("What is CIL's 5-year growth trajectory?") or uploads statutory documents (PDF, Scanned Maps, DWG, XLSX, CSV).
+4. **AI Processing & Hybrid Retrieval**  
+   System executes hybrid search combining SQL database parameters, BM25 keyword matching, vector embeddings (pgvector), and metadata filters.
+5. **Retrieval Verification (Anti-Hallucination Audit)**  
+   Retrieved evidence candidate set is audited for temporal alignment, mine/subsidiary scope, numerical consistency, and potential historical conflicts.
+6. **Private AI Response Generation**  
+   Local private vLLM engine receives verified evidence context and generates a grounded response with zero hallucination.
+7. **Traceability & Human-in-the-Loop Review**  
+   Generated answer or report draft displays exact document, page number, section, and year citations. Domain experts can approve, modify, or reject outputs for official release.
+
+---
+
+### 🏗️ 12-Layer Enterprise System Architecture
+
+```text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                           SANKALAN AI PLATFORM                              │
+│             AI-Powered Geological, Mining & Reporting Intelligence          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+ USERS (CIL Admin • Subsidiary Admin • Analyst • Geological Expert • Auditor)
+   │
+   ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 1. ACCESS & SECURITY LAYER                                                  │
+│ Auth • RBAC • CIL/Subsidiary/Mine Isolation • API Gateway • Audit Logging    │
+└──────────────────────────────────┬──────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 2. APPLICATION SERVICES LAYER                                              │
+│ Query • Document • Report • Organization • Data • Analytics • Workflow      │
+└──────────────────────────────────┬──────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 3. DATA INGESTION & CONNECTIVITY LAYER                                      │
+│ PDF • Scanned Docs • Excel/CSV • Word • Geological Maps • SAP/ERP Sync      │
+└──────────────────────────────────┬──────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 4. DOCUMENT INTELLIGENCE LAYER                                              │
+│ OCR • Parsing • Layout • Reading Order • Tables • Figures • Maps • Metadata  │
+└──────────────────────────────────┬──────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 5. KNOWLEDGE BUILDING & SEMANTIC PIPELINE                                  │
+│ Semantic Chunking • Embeddings • Entity Linking • Topics • Provenance      │
+└──────────────────────────────────┬──────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 6. KNOWLEDGE STORAGE LAYER                                                  │
+│ PostgreSQL • pgvector • Object Storage S3 • Metadata • Checksums             │
+└──────────────────────────────────┬──────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 7. QUERY PROCESSING & HYBRID RETRIEVAL                                      │
+│ Intent • Entity • SQL Search + Keyword Search (BM25) + Vector Search        │
+└──────────────────────────────────┬──────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 8. RETRIEVAL VERIFICATION LAYER (ANTI-HALLUCINATION AUDIT)                 │
+│ Query Relevance • Source Validity • Metadata • Completeness • Conflicts      │
+└──────────────────────────────────┬──────────────────────────────────────────┘
+                                   │
+                       ┌───────────┴────────────┐
+                       │                        │
+                    VERIFIED                 INSUFFICIENT
+                       │                        │
+                       ▼                        ▼
+┌───────────────────────────────┐       More Retrieval /
+│ 9. PRIVATE AI / vLLM LAYER    │       Clarification /
+│ Prompt • Context • Guardrails │       Abstention
+└───────────────┬───────────────┘
+                │
+                ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 10. GROUNDED GENERATION & INTELLIGENCE MODULES                              │
+│ AI Query & Evidence • Automated Reports • Topic Intelligence • Mining Intel │
+└──────────────────────────────────┬──────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 11. HUMAN-IN-THE-LOOP CONTROL                                                │
+│ Domain Expert Review → Approve / Modify / Reject                            │
+└──────────────────────────────────┬──────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 12. OUTPUT & SOURCE TRACEABILITY                                             │
+│ Decision-Ready Answer • Page/Section Bounding Box • PDF/DOCX Export • Audit │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### ⚙️ Backend Microservice & Storage Topology
+
+#### 🔌 Backend Services Breakdown
+- **API Gateway & Routing**: Token validation, rate limiting, route dispatch.
+- **Auth & Governance Service**: Multi-tenant isolation, RBAC role scopes, audit trail logging.
+- **Document Ingestion Service**: File validation, format detection, Redis queue job orchestration.
+- **Document Intelligence Engine**: Spatial layout OCR, table extraction, entity tagging.
+- **Knowledge & Vector Service**: Semantic chunking, pgvector embedding generation, knowledge graph indexing.
+- **Hybrid Retrieval & Reranker Service**: Fusion of SQL structured parameters, BM25 keyword matching, and dense vector similarity.
+- **Deterministic Verification Engine**: Real-time cross-referencing of query bounds against retrieved chunk metadata to filter false positives.
+- **vLLM Orchestration Client**: Guardrailed prompt composition and local LLM execution.
+- **Report Exporter Service**: Dynamic template binding, chart generation, and DOCX/PDF rendering.
+
+#### 🗄️ Storage Tier Mapping
+| Storage Engine | Data Purpose | Integrity & Security |
+| :--- | :--- | :--- |
+| **PostgreSQL** | Users, RBAC roles, subsidiary metadata, SAP structured data, audit logs | Encrypted at rest, row-level access policies |
+| **pgvector** | Dense vector embeddings for text, table representations, and image features | HNSW / IVFFlat indexing for sub-10ms retrieval |
+| **Object Storage (S3)** | Original PDFs, scanned mine maps, CAD DWG files, exported report binaries | SHA-256 checksum validation, immutable URI links |
+
+---
 
 ---
 
@@ -487,11 +522,13 @@ Approval-Ready CMPDI/CIL Reporting Intelligence
 ```text
 Team_Forven_SCET_121491/
 ├── docs/                                     # Comprehensive Technical & Research Specs
+│   ├── SANKALAN_AI_System_Architecture_And_User_Flow.md # End-to-End User Flow & 12-Layer System Architecture
 │   ├── SANKALAN_AI_Technical_PRD.md              # Technical Architecture & API Blueprint
 │   ├── SANKALAN_AI_Frontend_PRD.md               # Frontend Design System & UI Specifications
 │   └── SANKALAN_AI_Research_Evidence_Case_Study.md # Full Research Case Study & Academic Citations
 ├── Sankalan_AI_Demo_Frontend_PRD.docx            # Original Microsoft Word Spec (Frontend)
 ├── Sankalan_AI_Demo_Mining_Report.docx           # Sample Mining Report Output (DOCX)
+├── Sankalan_AI_Research_Architecture_Case_Study.docx # Research Architecture Case Study (DOCX)
 ├── Sankalan_AI_Research_Evidence_Case_Study.docx # Original Research Case Study (DOCX)
 ├── Sankalan_AI_Technical_PRD.docx                # Original Microsoft Word Spec (Technical)
 ├── public/                                   # Static Assets & Sample PDF Reports
